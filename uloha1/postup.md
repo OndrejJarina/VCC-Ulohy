@@ -1,4 +1,5 @@
 # NI-VCC Úloha 1
+#### Ondrej Jarina, 2023
 
 ### Nasadenie OpenStacku
 Pri nasadení OpenStacku som postupoval hlavne podľa návodu v [dokumentácii OpenStacku](https://docs.openstack.org/kolla-ansible/zed/user/quickstart.html).
@@ -29,8 +30,10 @@ kolla-ansible install-deps
 ```
 
 #### 3. Vytvorenie veth pairu
-Na oboch VM vytvoríme veth pair nasledovne:
+Na network node vytvoríme veth pair nasledovne:
+
 `emacs /etc/systemd/network/25-veth-b1b2.netdev`
+
 ![](img/vethPair1.png)
 
 `emacs /etc/netplan/00-installer-config.yaml`
