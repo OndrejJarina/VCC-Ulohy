@@ -36,6 +36,16 @@ Ak chceme zistiť, či ping prechádza firewallom, trasujeme prevádzku na rozhr
 
 ![](img/tcp_dump_dhcp_qvb.png)
 
-### Trasovanie prevádzky pomocou Wireshark
+### Trasovanie prevádzky VXLAN pomocou Wireshark
+Trasovanie prevádzky tunela VXLAN medzi dvomi uzlami vykonáme znova pomocou príkazu `tcpdump`.
+Najprv príkazom `ip netns` zistíme namespaces. 
 
+```
+qrouter-a5848e90-7a1f-4e4b-8ad0-2e4353ee106c (id: 1)
+qdhcp-9386f052-5cb7-4f69-985a-af55fa8feb7b (id: 0)
+```
 
+Príkazom `ip netns exec qrouter-a5848e90-7a1f-4e4b-8ad0-2e4353ee106c ip addr`  zistíme ip konfiguráciu na qrouter namespace.
+Názov interface routera je `qr-122f74b8-4f`.
+Môžeme tak trasovať prevádzku medzi dvomi uzlami: `ip netns exec qrouter-a5848e90-7a1f-4e4b-8ad0-2e4353ee106c tcpdump -ll -i qr-122f74b8-4f -s 65535 -w ctltocmd.txt`
+![](img/wireshark_1.png)
