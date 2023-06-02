@@ -187,7 +187,7 @@ Využijem aplikáciu z prvej časti.
 Vytvorím unit súbor docker_app.service `touch /etc/systemd/system/docker_app.service`, upravím ho, špecifikujem lokalitu aplikácie `emacs /etc/systemd/system/docker_app.service`.
 ![](img/emacs1.png)
 
-Pomocou `systemd-analyze securoty docker_app.service` zistíme skóre bezpečnosti.
+Pomocou `systemd-analyze security docker_app.service` zistíme skóre bezpečnosti.
 
 ![](img/security_score.png)
 Má 9,6 - Unsafe 😨
