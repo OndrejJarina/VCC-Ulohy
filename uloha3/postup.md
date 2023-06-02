@@ -193,6 +193,7 @@ Pomocou `systemd-analyze security docker_app.service` zistíme skóre bezpečnos
 Má 9,6 - Unsafe 😨
 
 Upravím unit file na zlepšenie skóre:
+
 ![](img/emacs2.png)
 
 
