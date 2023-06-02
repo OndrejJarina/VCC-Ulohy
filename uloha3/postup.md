@@ -169,11 +169,16 @@ Pomocou wget stiahol arch linux bootstrap zo servera `wget http://ftp.sh.cvut.cz
 
 Rozbalil som tar do zložky ArchLinuxContainer ` sudo tar -xzf archlinux-bootstrap-2023.06.01-x86_64.tar.gz -C ArchLinuxContainer/`
 
-Systemd-nspawn spustí image použitím prepínača -D `systemd-nspawn -D ArchLinuxContainer/root.x86_64`
+Systemd-nspawn spustí image použitím prepínačov -bD `systemd-nspawn -bD ArchLinuxContainer/root.x86_64`
 
 Na obrázku vidíme spustený arch linux:
 
+![](img/boot.png)
+
+Vytvoril som používateľa root1 a je možné prihlásnie do systému.
+
 ![](img/arch_works.png)
+
 
 ## Jednotkový súbor pre Systemd
 
