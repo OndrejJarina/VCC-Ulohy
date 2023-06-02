@@ -5,6 +5,7 @@
 Na vytvorenie docker image som použil node js server aplikáciu (úloha z predmetu NI-AM2).
 
 Použitý dockerfile:
+
 ![](img/dockerfile.png)
 
 `docker build --network host -t docker_app .`
