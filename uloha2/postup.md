@@ -43,5 +43,5 @@ Trasovanie prebieha na fyzickom rozhraní, v tomto prípade `ens192`.
 
 ![](img/wireshark_1.png)
 
-## Diagram sieťových prvkov East-West
+## Diagram sieťových prvkov
 ![](img/nakres.png)
